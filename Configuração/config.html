@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Tapioca da dona Maria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>Tapioca da dona Maria</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Pedidos</a>
+            <a href="#">Histórico de pedidos</a>
+            <a href="#">Cupons</a>
+            <a href="#">Configurações</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Configurações da loja</a>
+            <a href="#">Configurações de entrega</a>
+            <a href="#">Histórico de pagamentos</a>
+            <a href="#">Minha assinatura</a>
+        </div>
+        <div class="content">
+            <h3>Tema atual</h3>
+            <img src="https://via.placeholder.com/300x150" alt="Tema atual">
+            <p>Pizzaria 01</p>
+            <button onclick="trocarTema()">Trocar tema</button>
+            <h3>Mudar nome da loja</h3>
+            <input type="text" id="nome-loja" value="Tapiocaria da dona Maria">
+            <button onclick="salvarNome()">Salvar novo nome</button>
+            <h3>Definir localização da loja</h3>
+            <input type="text" id="localizacao-loja" placeholder="Digite a localização da loja">
+        </div>
+    </div>
+    <div class="footer">
+        Pedido Fácil
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

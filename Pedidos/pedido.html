@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapioca da dona Maria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Tapioca da dona Maria</div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Pedidos</a>
+            <a href="#">Histórico de pedidos</a>
+            <a href="#">Cupons</a>
+            <a href="#">Configurações</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="order-section">
+            <h2>Pedidos recebidos</h2>
+            <button class="update-button">Atualizar</button>
+            <div class="order-card">
+                <p><strong>Nome do cliente:</strong></p>
+                <p><strong>Endereço:</strong></p>
+                <p><strong>Pedido:</strong></p>
+                <p><strong>Valor:</strong></p>
+                <p><strong>Forma de pagamento:</strong></p>
+                <p><strong>Mensagem do cliente:</strong></p>
+                <p><strong>Descrição:</strong></p>
+                <div class="order-actions">
+                    <button class="confirm-button">Confirmar</button>
+                    <button class="decline-button">Recusar</button>
+                </div>
+            </div>
+            <!-- Repeat order-card for more orders -->
+        </div>
+        <div class="order-section">
+            <h2>Pedidos aceitos</h2>
+            <button class="update-button">Atualizar</button>
+            <div class="order-card">
+                <p><strong>Nome do cliente:</strong></p>
+                <p><strong>Endereço:</strong></p>
+                <p><strong>Pedido:</strong></p>
+                <p><strong>Valor:</strong></p>
+                <p><strong>Forma de pagamento:</strong></p>
+                <p><strong>Mensagem do cliente:</strong></p>
+                <p><strong>Descrição:</strong></p>
+                <button class="finalize-button">Finalizar</button>
+            </div>
+            <!-- Repeat order-card for more orders -->
+        </div>
+        <div class="order-section">
+            <h2>Pedidos finalizados</h2>
+            <button class="update-button">Atualizar</button>
+            <div class="order-card">
+                <p><strong>Nome do cliente:</strong></p>
+                <p><strong>Endereço:</strong></p>
+                <p><strong>Pedido:</strong></p>
+                <p><strong>Valor:</strong></p>
+                <p><strong>Forma de pagamento:</strong></p>
+                <p>Avaliação do cliente: 5/10</p>
+                <p>Mensagem do cliente: Opinião do cliente sobre o pedido e entrega</p>
+                <button class="details-button">Detalhes do pedido</button>
+            </div>
+            <!-- Repeat order-card for more orders -->
+        </div>
+    </div>
+    <footer>
+        <div class="logo">Pedido Fácil</div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

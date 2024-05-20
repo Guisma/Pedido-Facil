@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapioca da dona Maria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .status-loja {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .status-loja span {
+            margin-right: 10px;
+        }
+        .status-fechado {
+            color: red;
+        }
+        .status-aberto {
+            color: green;
+        }
+        .link-loja {
+            margin-left: auto;
+        }
+        .link-loja button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .pedidos {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pedido-card {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 30%;
+        }
+        .pedido-card h3 {
+            margin: 0 0 10px 0;
+        }
+        .button-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-group button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .support-button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Tapioca da dona Maria</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Pedidos</a>
+            <a href="#">Histórico de pedidos</a>
+            <a href="#">Cupons</a>
+            <a href="#">Configurações</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="status-loja">
+            <span>Status da loja: <span class="status-fechado">fechado</span></span>
+            <button onclick="abrirLoja()">Abrir loja</button>
+            <div class="link-loja">
+                Compartilhe o link da sua loja: sualoja.dominio.com.br
+                <button onclick="copiarLink()">Copiar</button>
+            </div>
+        </div>
+        <div class="pedidos">
+            <div class="pedido-card">
+                <h3>Últimos Pedidos</h3>
+                <p>Nome do cliente</p>
+                <p>Endereço</p>
+                <p>Pedido</p>
+                <p>Valor</p>
+                <p>Forma de pagamento</p>
+                <p>Descrição</p>
+                <a href="#">Ver detalhes do pedido</a>
+            </div>
+            <div class="pedido-card">
+                <h3>Últimos Pedidos</h3>
+                <p>Nome do cliente</p>
+                <p>Endereço</p>
+                <p>Pedido</p>
+                <p>Valor</p>
+                <p>Forma de pagamento</p>
+                <p>Descrição</p>
+                <a href="#">Ver detalhes do pedido</a>
+            </div>
+            <div class="pedido-card">
+                <h3>Últimos Pedidos</h3>
+                <p>Nome do cliente</p>
+                <p>Endereço</p>
+                <p>Pedido</p>
+                <p>Valor</p>
+                <p>Forma de pagamento</p>
+                <p>Descrição</p>
+                <a href="#">Ver detalhes do pedido</a>
+            </div>
+        </div>
+        <div class="button-group">
+            <button>Veja como estão indo suas vendas</button>
+            <button>Crie cupons para atrair mais clientes</button>
+        </div>
+    </div>
+    <button class="support-button">Suporte</button>
+    <div class="footer">
+        Pedido Fácil
+    </div>
+
+    <script>
+        function abrirLoja() {
+            document.querySelector('.status-fechado').innerText = 'aberto';
+            document.querySelector('.status-fechado').classList.remove('status-fechado');
+            document.querySelector('.status-aberto').classList.add('status-aberto');
+        }
+
+        function copiarLink() {
+            const link = 'sualoja.dominio.com.br';
+            navigator.clipboard.writeText(link).then(() => {
+                alert('Link copiado com sucesso!');
+            }).catch(err => {
+                console.error('Erro ao copiar link: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
