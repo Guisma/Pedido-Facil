@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Fácil - Cupons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Tapioca da dona Maria</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Histórico de pedidos</a></li>
+                <li><a href="#">Cupons</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Criar cupom</h2>
+            <form id="cuponForm" class="form-container">
+                <label for="codigo">Código do cupom</label>
+                <input type="text" id="codigo" name="codigo" required>
+                
+                <label for="data-inicio">Data de início da promoção do cupom</label>
+                <input type="date" id="data-inicio" name="data-inicio" required>
+                
+                <label for="data-expiracao">Data de expiração do cupom</label>
+                <input type="date" id="data-expiracao" name="data-expiracao" required>
+                
+                <label for="valor-minimo">Valor mínimo</label>
+                <input type="number" id="valor-minimo" name="valor-minimo" required>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        
+        <section class="cupons-section">
+            <h2>Cupons cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Data de início</th>
+                        <th>Data de expiração</th>
+                        <th>Status</th>
+                        <th>Valor mínimo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Páscoa</td>
+                        <td>12/03/2024</td>
+                        <td>29/03/2024</td>
+                        <td>Ativo</td>
+                        <td>26,50R$</td>
+                        <td>
+                            <button class="btn-excluir">Excluir</button>
+                            <button class="btn-editar">Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Pedido Fácil</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

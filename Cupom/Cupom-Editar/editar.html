@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapioca da Dona Maria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tapioca da Dona Maria</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Histórico de pedidos</a></li>
+                <li><a href="#">Cupons</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="edit-coupon">
+            <h2>Editar cupom</h2>
+            <form>
+                <label for="coupon-code">Código do cupom</label>
+                <input type="text" id="coupon-code" value="Pascoa">
+
+                <label for="start-date">Data de início da promoção do cupom</label>
+                <input type="date" id="start-date" value="2024-03-12">
+
+                <label for="end-date">Data de expiração do cupom</label>
+                <input type="date" id="end-date" value="2024-03-29">
+
+                <label for="status">Status</label>
+                <select id="status">
+                    <option value="ativo" selected>Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+
+                <label for="min-value">Valor mínimo</label>
+                <input type="text" id="min-value" value="26,50R$">
+
+                <button type="submit">Atualizar</button>
+            </form>
+        </section>
+        <section class="registered-coupons">
+            <h2>Cupons cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Data de início</th>
+                        <th>Data de expiração</th>
+                        <th>Status</th>
+                        <th>Valor mínimo</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pascoa</td>
+                        <td>12/03/2024</td>
+                        <td>29/03/2024</td>
+                        <td>Ativo</td>
+                        <td>26,50R$</td>
+                        <td><button class="delete">Excluir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Pedido Fácil</p>
+        </div>
+    </footer>
+</body>
+</html>

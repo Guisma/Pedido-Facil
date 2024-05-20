@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapioca da Dona Maria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tapioca da Dona Maria</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Histórico de pedidos</a></li>
+                    <li><a href="#">Cupons</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Cadastrar item no cardápio</h2>
+            <form id="itemForm">
+                <label for="itemName">Nome do item</label>
+                <input type="text" id="itemName" name="itemName" required>
+
+                <label for="itemImage">Cadastrar imagem</label>
+                <input type="file" id="itemImage" name="itemImage" required>
+
+                <label for="itemDescription">Descrição</label>
+                <textarea id="itemDescription" name="itemDescription" rows="4" required></textarea>
+
+                <label for="itemPrice">Valor</label>
+                <input type="number" id="itemPrice" name="itemPrice" required>
+
+                <button type="submit">Cadastrar item</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>Pedido Fácil</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

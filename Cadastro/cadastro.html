@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Fácil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-container">
+            <h2>Pedido Fácil</h2>
+            <p>Crie sua conta e simplifique suas vendas!</p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(81) 90000-0000" required>
+            
+            <label for="tipo-conta">Tipo de conta</label>
+            <select id="tipo-conta" name="tipo-conta">
+                <option value="cnpj">CNPJ</option>
+                <option value="cpf">CPF</option>
+            </select>
+            
+            <label for="cnpj-cpf">CNPJ/CPF</label>
+            <input type="text" id="cnpj-cpf" name="cnpj-cpf" placeholder="11.155.481/0001-01" required>
+            
+            <label for="nome-loja">Nome da loja</label>
+            <input type="text" id="nome-loja" name="nome-loja" placeholder="Crie um nome único pra sua loja" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+            <p class="password-info">Crie uma senha com no mínimo 10 caracteres. Utilize letras, números e caracteres especiais.</p>
+            
+            <div class="planos">
+                <div class="plano">
+                    <input type="radio" id="plano-mensal" name="plano" value="mensal" checked>
+                    <label for="plano-mensal">
+                        <strong>Plano mensal</strong><br>
+                        vantagens<br>
+                        Pedidos ilimitados<br>
+                        Cardápio ilimitado<br>
+                        Link para sua loja<br>
+                        Hospedagem de loja gratis<br>
+                        <strong>Valor: 52,60R$</strong>
+                    </label>
+                </div>
+                <div class="plano">
+                    <input type="radio" id="plano-temporada" name="plano" value="temporada">
+                    <label for="plano-temporada">
+                        <strong>Plano por temporada</strong><br>
+                        2 meses de duração<br>
+                        vantagens<br>
+                        Pedidos ilimitados<br>
+                        Cardápio ilimitado<br>
+                        Link para sua loja<br>
+                        Hospedagem de loja gratis<br>
+                        <strong>Valor: 65,72R$</strong>
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
